@@ -3,7 +3,8 @@
 * **Project:** Dwitter Censorship resistant Web3 Microblogging and Social Networking service
 
 ## Project Overview 
-The projects serves a web3 replacement of Twitter, which has become the Internet standard for 330 active users engaging in the creation of content as well as social interaction, political and journalistic review, news coverage and diplomatic representation of countries. The platform has made it easy to pursue these means of communication using centralized instrastructure and services owned and operated by Twitter Inc. -- Parity's mission of launching the web3 in a decentralized manner aligns with the idea of including a version of the platform that relies on technology such as Polkadot human readable names and IPFS for self-hosted user content, providing uncensorable social content entirely in the users control.
+The projects serves a web3 replacement of Twitter, which has become the Internet standard for 330 active users engaging in the creation of content as well as social interaction, political and journalistic review, news coverage and diplomatic representation of countries.
+The platform has made it easy to pursue these means of communication using centralized instrastructure and services owned and operated by Twitter Inc. -- Parity's mission of launching the web3 in a decentralized manner aligns with the idea of including a version of the platform that relies on technology such as Polkadot human readable names and IPFS for self-hosted user content, providing uncensorable social content entirely in the users control.
 
 ### Overview
 

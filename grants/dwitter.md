@@ -26,11 +26,76 @@ The final state of the project renders a Website on Public DNS or browser suppor
 
 
 The UI mimics the Twitter.com user experience with additional features. 
-[[MISSING: *  Mockups/designs of any UI components]]
-[[MISSING: *  API specifications of the core functionality]]
-[[MISSING: *  An overview of the technology stack to be used]]
+
+#### Preliminary Architecture and API Outline
+
+The concept of follow, the code base at the start of the implementation holds at its core the concept of an identity. The identity object is where the data about the users posts, the people they "follow", and whatever else they might want to include is stored. An identity object is the fundamental unit that we'll use to create a distributed social graph.
+
+First, we connect to IPFS and retrieve our ID. On first boot, we instantiate a new "Identity" object, which is ultimately saved to disk as a json file.
+
+Most of the identity logic is contained in the Identity class:
+`follow/modules/identity.js`
+
+Identity object structure:
+
+root level keys:
+
+```
+{
+    "av": "", // base64 encoded image data for "avatar"
+    "aux": {}, // an object for arbitrary, user-defined data. Ex.
+    "dn": "", // user-defined display name
+    "id": "", // users IPFS ID
+    "meta": [""], // list of CIDs that represent meta objects
+    "posts": [""], // a list of CIDs that represent post objects
+    "following": [""], // a list of ID's the user follows
+    "ts": 10000, // UTC adjusted UNIX timestamp of the identities last edit
+}
+```
+
+aux object:
+
+```
+{
+    "btc": "",
+    "website": ""
+}
+```
+
+post object:
+
+```
+{
+    "body": "", // the text body of the post
+    "publisher": "", // original publisher, will be used for "re-post" functionality
+    "magnet": "", // a webtorrent magnet link for redundancy
+    "cid": "", // IPFS CID of the root directory of the post
+    "files": [], // a list of file paths, relative to the user data directory
+    "ts": 0 // UTC adjusted UNIX timestamp of the post
+}
+```
+
+We cache every post (user and following) object and "post body"(text) to disk for faster load times, and we automatically pin post CIDs to strengthen the network. ID caches follow a strict directory structure.
+
+Once an identity object has been generated and saved to disk, it is "uploaded" and "pinned" via IPFS.
+Then, in an attempt to abide by unix philosophy, we publish the identity CID to IPNS wrapped in a directory, so other things can be stored there as well.
+
+TODO: recursively merge new publication with the "root directory" of previously published record.
+
+The users identity object CID can now be retrieved by querying IPNS with their ID and the object itself can be downloaded.
+
+Once a user "follows" another user, the process of fetching their posts is done automatically. The posts are presented chronologically in a "feed" with the all posts from all the other ID's the user follows.
+
+Identity objects _will_ be automatically re-fetched periodically, followed by their new posts.
+
+#### Technology Stack
+The used open source technologies for censorship resistance, decentralization and tokenization, human readable domain names, render as [[Tor|https://github.com/TheTorProject]], [[IPFS|https://github.com/ipfs/ipfs]], [[IPNS|https://docs.ipfs.io/concepts/ipns/]], and [[OpenBazzar tor onion ipfs transport||https://github.com/OpenBazaar/go-onion-transport]]. 
+
+#### Docuemntation
 [[MISSING: *  Documentation of core components, protocols, architecture etc. to be deployed]]
-* PoC: https://github.com/iohzrd/follow
+
+#### Proof of Concept
+* https://github.com/iohzrd/follow
 
 ### Ecosystem Fit 
 The Ecosystem fit is proven by purpose, integration of the Polkadot Stack and architectural censorship resistant design of the project. The AutoDapp project seems to align https://raymondcheng.net/projects/decentralization/autodapp-proposal.html with the web3 mission as well.

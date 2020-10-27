@@ -9,8 +9,8 @@ The platform has made it easy to pursue these means of communication using centr
 
 ### Overview
 
-  * [[Substrate / Polkadot / Kusama Integration]] Dwitter provides a Polkadot Parachain for human readable names in a decentralized platform, as well as social currency exchange between users.
-  * [[Team]] The team is experienced in cryptographic technology, distributed systems and shares the security community's and Parity's mission on decentralization.
+  * *Substrate / Polkadot / Kusama Integration* Dwitter provides a Polkadot Parachain for human readable names in a decentralized platform, as well as social currency exchange between users.
+  * *Team* The team is experienced in cryptographic technology, distributed systems and shares the security community's and Parity's mission on decentralization.
     It serves experience in international entrepreneurship and is engaged in the security community. Open source value for a web3 and a more open and decentralized     Internet has been and is being created.
 
 ### Project Details 

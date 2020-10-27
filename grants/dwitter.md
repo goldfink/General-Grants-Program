@@ -1,4 +1,4 @@
-# 30k Grant Proposal
+# Dwitter 30k Grant Proposal
 
 * **Project:** Dwitter Censorship resistant Web3 Microblogging and Social Networking service
 

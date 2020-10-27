@@ -89,7 +89,7 @@ Once a user "follows" another user, the process of fetching their posts is done 
 Identity objects _will_ be automatically re-fetched periodically, followed by their new posts.
 
 #### Technology Stack
-The used open source technologies for censorship resistance, decentralization and tokenization, human readable domain names, render as [Tor|https://github.com/TheTorProject], [IPFS|https://github.com/ipfs/ipfs], [IPNS|https://docs.ipfs.io/concepts/ipns/], and [OpenBazzar tor onion ipfs transport||https://github.com/OpenBazaar/go-onion-transport]. 
+The used open source technologies for censorship resistance, decentralization and tokenization, human readable domain names, render as [Tor](https://github.com/TheTorProject), [IPFS](https://github.com/ipfs/ipfs), [IPNS](https://docs.ipfs.io/concepts/ipns/), and [OpenBazzar tor onion ipfs transport](https://github.com/OpenBazaar/go-onion-transport). 
 
 #### Docuemntation
 [MISSING: *  Documentation of core components, protocols, architecture etc. to be deployed]

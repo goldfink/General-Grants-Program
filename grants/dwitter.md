@@ -120,14 +120,14 @@ The team is experienced in decentralized technology and security community invol
 * https://github.com/iohzrd
 * https://github.com/iohzrd/follow
 * https://github.com/dan_cipher
-* https://github.com/weev
 * https://www.eff.org/press/releases/eff-joins-andrew-auernheimer-case-appeal
 * https://www.youtube.com/watch?v=7cgWrnPeIKs
 * https://www.businessinsider.com/peter-thiel-fellows-2013-2013-5?r=DE&IR=T
 
-### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+### Team Social Profiles
+* https://www.linkedin.com/in/dan-marsollek-049b741b7/
+* https://twitter.com/iohzrd
+* https://www.eff.org/press/releases/eff-joins-andrew-auernheimer-case-appeal
 
 ## Development Roadmap :nut_and_bolt: 
 
@@ -138,37 +138,24 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 * **Full-time equivalent (FTE):**  Full time work on the project will be pursued.
 * **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is $30k.
 
-### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in a UI client 
-* **Estimated Duration:** 3 months
+### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in a UI client & Implement Substrate Modules, Launch a Polkadot parachain for human readable names, social currency and Direct messages
+
+* **Estimated Duration:** 6 months
 * **FTE:**  1.0
-* **Costs:** $15,000
+* **Costs:** $30,000
+
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | ISC |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
-### Milestone 2 — Implement Substrate Modules, Launch a Polkadot parachain for human readable names and social currency 
-* **Estimated Duration:** 3 months
-* **FTE:**  1.0
-* **Costs:** $15,000
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | ISC |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 0b. | Documentation | We will provide both inline documentation of the code and Markdown documentation of it extending and forking the initial follow codebase |
+| 0c. | Blockchain | We will launch a Polkadot Parachain for Social Payments and Naming |
+| 1. | Substrate module: 1 | We will create a Substrate module that will incorporate human readable domain names for the current pinning model) |  
+| 2. | Substrate module: 2 | We will create a Substrate module that will render social payments with its own coin and other cryptocurrencies |  
+| 3. | Substrate module: 3 | We will create a Substrate module that will allow for private message hashsum verification with the network |  
+| 4. | Substrate chain | Modules Naming, Payment & Direct Messages of our custom chain will interact on top of the Dwitter client providing additional features as opposed to storing social content directly on the blockchain |  
+| 5. | Tor hidden services | Tor circuits will provide censorship resistant anonymous routing between the IPFS nodes, and the clients |
+| 6. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 
 ### Community engagement

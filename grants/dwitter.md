@@ -66,18 +66,18 @@ For each milestone:
 * Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment for the whole project. The total amount of funding needs to be below $100k.
+* **Total Estimated Duration:** 1 year 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
+* **Full-time equivalent (FTE):**  Full time work on the project will be pursued.
+* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is $30k.
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** $5,000
+### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in a UI client 
+* **Estimated Duration:** 3 months
+* **FTE:**  1.0
+* **Costs:** $15,000
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0a. | License | ISC |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
@@ -86,22 +86,31 @@ For each milestone:
 | 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
-### Milestone 2 Example — Additional features
-...
+### Milestone 2 — Implement Substrate Modules, Launch a Polkadot parachain for human readable names and social currency 
+* **Estimated Duration:** 3 months
+* **FTE:**  1.0
+* **Costs:** $15,000
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | ISC |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
+| 2. | Substrate module: Y | We will create a Substrate module that will... |  
+| 3. | Substrate module: Z | We will create a Substrate module that will... |  
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+
 
 ### Community engagement
 
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
-
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
+A thourough [Medium](https://medium.com/)) article will be written and published upon completion of the grant.
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+The long-term goal of the project is to fullfill the goal of Bluesky to provide a web3 version of Twitter with a focus on performance and censorship resistance, in the format of a publicly used Internet service instead of a Blockchain and Security Community exclusive project.
 
 ## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
+* Work done so far: Architectural setup, Follow code and UI for social media messaging and IPFS pinning
+* No further grant applications have been made, and no further financial involvement has been present
 
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?

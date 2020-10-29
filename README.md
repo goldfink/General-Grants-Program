@@ -3,7 +3,7 @@
 * **Project:** Dwitter Censorship resistant Web3 Microblogging and Social Networking service
 
 ## Project Overview 
-The projects serves a web3 replacement of Twitter, which has become the Internet standard for 330 active users engaging in the creation of content as well as social interaction, political and journalistic review, news coverage and diplomatic representation of countries.
+The projects serves a web3 replacement of Twitter, which has become the Internet standard for 330 million active users engaging in the creation of content as well as social interaction, political and journalistic review, news coverage and diplomatic representation of countries.
 
 The platform has made it easy to pursue these means of communication using centralized instrastructure and services owned and operated by Twitter Inc. -- Parity's mission of launching the web3 in a decentralized manner aligns with the goal of including a version of the platform that relies on technology such as Polkadot human readable names and IPFS for self-hosted user content, providing uncensorable social content entirely in the users control.
 
@@ -16,6 +16,8 @@ The platform has made it easy to pursue these means of communication using centr
 ### Project Details 
 The final state of the project renders a Website on Public DNS or browser supported crypto domains, as well as multiple clients for mobile and desktop usage. The user interfaces serves an intuitive frontend proxying social media funcitonality through censorship resistant and purposefully web3 proven Tor hidden services, IPFS/IPNS for user-controlled content delivery and a Polkadot parachain, rendering currency and human readable names.
 
+Previous social networking solutions like Diaspora or Mostadon have either failed to reach social outreach, or have failed in their purpose of censorship resistance for an open and inclusive web3. Current political censorship and changes to the Twitter UI render important issues. The company is subpoenad to testify on post censorship and is highly government survailled. Dwitter is aiming to use proven cryrptographic, distributed precedence in addition to a solid codebase and Substrate integration to fill in the gap. Social payments and incentivation of stars to use the platform is planned. 
+
 #### Architecture Mockup
 ![alt text](https://github.com/goldfink/General-Grants-Program/blob/Web3Foundation-patch-1/grants/Architecture_Mockup.png?raw=true)
 
@@ -26,6 +28,10 @@ The final state of the project renders a Website on Public DNS or browser suppor
 
 
 The UI mimics the Twitter.com user experience with additional features. 
+
+#### Similiar Projects
+* https://app.subsocial.network/ - Polkadot social network, discourages social use
+* https://www.ethtweet.me/ - Requires geth client for use
 
 #### Preliminary Architecture and API Outline
 
@@ -91,9 +97,6 @@ Identity objects _will_ be automatically re-fetched periodically, followed by th
 #### Technology Stack
 The used open source technologies for censorship resistance, decentralization and tokenization, human readable domain names, render as [Tor](https://github.com/TheTorProject), [IPFS](https://github.com/ipfs/ipfs), [IPNS](https://docs.ipfs.io/concepts/ipns/), and [OpenBazzar tor onion ipfs transport](https://github.com/OpenBazaar/go-onion-transport). 
 
-#### Docuemntation
-[MISSING: *  Documentation of core components, protocols, architecture etc. to be deployed]
-
 #### Proof of Concept
 * https://github.com/iohzrd/follow
 
@@ -103,7 +106,7 @@ The Ecosystem fit is proven by purpose, integration of the Polkadot Stack and ar
 ## Team
 
 ### Team members
-* Goldfink
+* goldfink
 * iohzrd
 * weev	
 
@@ -111,23 +114,23 @@ The Ecosystem fit is proven by purpose, integration of the Polkadot Stack and ar
 * https://github.com/goldfink/dtwitter
 
 ### Legal Structure 
-The company is registered in London, named Wyvern Intrinsics Ltd. as is owned by Dan Marsollek <goldfink@wyvern.ch>
+The company is registered in London, named Wyvern Intrinsics Ltd. as is owned by Dan Marsollek Zulla <goldfink@wyvern.ch>
 
 ### Team's experience
-The team is experienced in decentralized technology and security community involvement, contributions to major open source project and creation of tools. 
+The team is experienced in decentralized technology and security community involvement, contributions to major open source projects and security responsible disclosure is documented. 
 
 ### Team References
 * https://github.com/iohzrd
 * https://github.com/iohzrd/follow
+* https://bugzilla.mozilla.org/attachment.cgi?id=8623817&action=diff
+* https://www.nbcnews.com/id/wbna52112017
 * https://github.com/dan_cipher
-* https://www.eff.org/press/releases/eff-joins-andrew-auernheimer-case-appeal
 * https://www.youtube.com/watch?v=7cgWrnPeIKs
 * https://www.businessinsider.com/peter-thiel-fellows-2013-2013-5?r=DE&IR=T
+* https://www.eff.org/press/releases/eff-joins-andrew-auernheimer-case-appeal
 
 ### Team Social Profiles
-* https://www.linkedin.com/in/dan-marsollek-049b741b7/
-* https://twitter.com/iohzrd
-* https://www.eff.org/press/releases/eff-joins-andrew-auernheimer-case-appeal
+* https://www.linkedin.com/in/goldfink/
 
 ## Development Roadmap :nut_and_bolt: 
 
